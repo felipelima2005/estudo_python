@@ -116,8 +116,8 @@ python-estudos/
 
 ### 1. Clone o repositório
 ```bash
-git clone https://github.com/felipelima2005/python-estudos.git
-cd python-estudos
+git clone https://github.com/felipelima2005/estudo_python.git
+cd estudos_python
 ```
 
 ### 2. Escolha seu nível
