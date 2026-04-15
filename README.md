@@ -1,181 +1,221 @@
-# 🐍 Repositório de Estudos em Python
+# 🐍 Exercícios Práticos de Python
 
-> Materiais de estudo organizados por nível de conhecimento — do zero ao avançado.
-
----
-
-## 📚 Sobre este Repositório
-
-Este repositório foi criado para organizar exercícios, exemplos e projetos práticos de Python de forma progressiva. Cada nível foi pensado para solidificar os conceitos antes de avançar para o próximo.
+> Lista de exercícios organizados por nível para praticar Python do básico ao avançado.
 
 ---
 
-## 🗂️ Estrutura do Repositório
+## 🗂️ Índice
 
-```
-python-estudos/
-│
-├── 🟢 iniciante/
-│   ├── 01_variaveis_e_tipos/
-│   ├── 02_operadores/
-│   ├── 03_condicionais/
-│   ├── 04_loops/
-│   ├── 05_funcoes_basicas/
-│   ├── 06_listas_e_tuplas/
-│   └── README.md
-│
-├── 🟡 intermediario/
-│   ├── 01_dicionarios_e_sets/
-│   ├── 02_funcoes_avancadas/
-│   ├── 03_list_comprehension/
-│   ├── 04_modulos_e_pacotes/
-│   ├── 05_tratamento_de_erros/
-│   ├── 06_leitura_e_escrita_de_arquivos/
-│   └── README.md
-│
-├── 🔴 avancado/
-│   ├── 01_orientacao_a_objetos/
-│   ├── 02_heranca_e_polimorfismo/
-│   ├── 03_decorators/
-│   ├── 04_geradores_e_iteradores/
-│   ├── 05_programacao_funcional/
-│   ├── 06_concorrencia_e_threads/
-│   └── README.md
-│
-├── 📁 projetos/
-│   ├── calculadora/
-│   ├── lista_de_tarefas/
-│   └── web_scraper/
-│
-└── README.md
+- [🟢 Nível 1 – Iniciante](#-nível-1--iniciante)
+- [🟡 Nível 2 – Intermediário](#-nível-2--intermediário)
+- [🔵 Nível 3 – Avançado](#-nível-3--avançado)
+- [🏆 Desafio Extra](#-desafio-extra--projeto-para-portfólio)
+- [📊 Resumo dos Níveis](#-resumo-dos-níveis)
+
+---
+
+## 🟢 Nível 1 – Iniciante
+
+> **Objetivo:** Dominar entrada de dados, operações básicas e estruturas condicionais.
+
+---
+
+### 1️⃣ Calculadora Simples
+
+Crie um programa que:
+
+- Solicite dois números ao usuário
+- Pergunte qual operação deseja realizar: `+`, `-`, `*` ou `/`
+- Exiba o resultado da operação
+
+**Conceitos:** `input`, `float`, `if/elif/else`
+
+```python
+# Exemplo de uso
+Digite o primeiro número: 10
+Digite o segundo número: 4
+Operação (+, -, *, /): *
+Resultado: 40.0
 ```
 
 ---
 
-## 🟢 Nível Iniciante
+### 2️⃣ Verificador de Número Par ou Ímpar
 
-> **Pré-requisito:** Nenhum. Ideal para quem nunca programou ou está começando em Python.
+- Solicite um número inteiro
+- Informe se ele é par ou ímpar
 
-| Tópico | Descrição |
+**Dica:** Utilize o operador `%` (módulo)
+
+```python
+# Exemplo de uso
+Digite um número: 7
+O número 7 é ÍMPAR.
+```
+
+---
+
+### 3️⃣ Conversor de Temperatura
+
+- Converta uma temperatura de Celsius para Fahrenheit
+- **Fórmula:** `F = (C × 9/5) + 32`
+
+```python
+# Exemplo de uso
+Digite a temperatura em Celsius: 100
+100°C equivale a 212.0°F
+```
+
+---
+
+## 🟡 Nível 2 – Intermediário
+
+> **Objetivo:** Trabalhar com laços de repetição, listas e dicionários.
+
+---
+
+### 4️⃣ Tabuada com `while`
+
+- Solicite um número ao usuário
+- Exiba sua tabuada de 1 a 10 utilizando o `while`
+
+```python
+# Exemplo de uso
+Digite um número: 7
+7 x 1 = 7
+7 x 2 = 14
+...
+7 x 10 = 70
+```
+
+---
+
+### 5️⃣ Cadastro de Alunos
+
+Crie um sistema que:
+
+- Permita cadastrar vários alunos e suas notas
+- Armazene os dados em um dicionário
+- Exiba:
+  - Lista de alunos
+  - Média da turma
+  - Alunos aprovados (nota ≥ 7)
+
+**Conceitos:** `dict`, `for`, `sum`, `len`
+
+```python
+# Exemplo de uso
+Alunos cadastrados: Ana (8.5), Bruno (6.0), Carla (9.0)
+Média da turma: 7.83
+Aprovados: Ana, Carla
+```
+
+---
+
+### 6️⃣ Jogo de Adivinhação
+
+- Gere um número aleatório entre 1 e 100 usando `random`
+- O usuário deve tentar adivinhar o número
+- Informe se o palpite é maior ou menor
+- Mostre o número de tentativas ao final
+
+```python
+# Exemplo de uso
+Tente adivinhar o número (1–100): 50
+Muito alto! Tente novamente: 25
+Muito baixo! Tente novamente: 37
+Acertou em 3 tentativas!
+```
+
+---
+
+## 🔵 Nível 3 – Avançado
+
+> **Objetivo:** Introduzir funções, manipulação de arquivos e menus interativos.
+
+---
+
+### 7️⃣ Sistema de Controle de Estoque
+
+Crie um programa com menu que permita:
+
+```
+1. Adicionar produto (nome e quantidade)
+2. Remover produto
+3. Atualizar quantidade
+4. Listar produtos
+5. Sair
+```
+
+**Conceitos:** `dict`, `while`, funções
+
+---
+
+### 8️⃣ Agenda de Contatos com Arquivo
+
+Desenvolva uma agenda que:
+
+- Permita adicionar, listar e buscar contatos
+- Salve os dados em um arquivo `contatos.txt`
+- Carregue os dados ao iniciar o programa
+
+**Conceitos:** `open()`, leitura e escrita de arquivos
+
+---
+
+### 9️⃣ Simulação de Caixa Eletrônico
+
+O programa deve:
+
+- Solicitar um PIN para acesso
+- Permitir consultar saldo, depositar e sacar
+- Validar saldo insuficiente
+- Utilizar funções para cada operação
+
+```python
+# Exemplo de uso
+Digite seu PIN: ****
+Bem-vindo!
+[1] Consultar saldo  [2] Depositar  [3] Sacar  [4] Sair
+```
+
+---
+
+## 🏆 Desafio Extra – Projeto para Portfólio
+
+### 🔟 Sistema de Biblioteca
+
+Funcionalidades:
+
+- Cadastrar livros
+- Emprestar e devolver livros
+- Listar livros disponíveis e emprestados
+- Salvar dados em arquivo
+
+> 💡 Este projeto é ideal para compor seu portfólio no GitHub. Tente implementar sozinho antes de buscar referências!
+
+---
+
+## 📊 Resumo dos Níveis
+
+| Nível | Habilidades Trabalhadas |
 |---|---|
-| Variáveis e Tipos | `int`, `float`, `str`, `bool` |
-| Operadores | Aritméticos, relacionais e lógicos |
-| Condicionais | `if`, `elif`, `else` |
-| Loops | `for`, `while`, `break`, `continue` |
-| Funções Básicas | `def`, parâmetros, `return` |
-| Listas e Tuplas | Criação, índices, métodos básicos |
-
-**O que você vai conseguir fazer ao final:**
-- Criar scripts simples de automação
-- Resolver problemas lógicos básicos
-- Manipular textos e números
+| 🟢 Iniciante | `input`, `print`, `if/else`, operações matemáticas |
+| 🟡 Intermediário | `while`, `for`, `list`, `dict`, `random` |
+| 🔵 Avançado | Funções, arquivos, menus interativos |
+| 🏆 Portfólio | Integração de todos os conceitos em projetos completos |
 
 ---
 
-## 🟡 Nível Intermediário
+## 🚀 Como Praticar
 
-> **Pré-requisito:** Ter concluído ou ter familiaridade com os tópicos do nível Iniciante.
-
-| Tópico | Descrição |
-|---|---|
-| Dicionários e Sets | Estruturas chave-valor, operações de conjunto |
-| Funções Avançadas | `*args`, `**kwargs`, funções anônimas (`lambda`) |
-| List Comprehension | Criação de listas e dicionários de forma concisa |
-| Módulos e Pacotes | `import`, `pip`, bibliotecas padrão |
-| Tratamento de Erros | `try`, `except`, `finally`, exceções customizadas |
-| Arquivos | Leitura e escrita de `.txt`, `.csv`, `.json` |
-
-**O que você vai conseguir fazer ao final:**
-- Trabalhar com dados em arquivos
-- Estruturar código de forma reutilizável
-- Usar bibliotecas externas nos projetos
-
----
-
-## 🔴 Nível Avançado
-
-> **Pré-requisito:** Domínio sólido dos tópicos Iniciante e Intermediário.
-
-| Tópico | Descrição |
-|---|---|
-| Orientação a Objetos | Classes, atributos, métodos, `__init__` |
-| Herança e Polimorfismo | Hierarquia de classes, `super()`, sobrescrita |
-| Decorators | `@property`, `@staticmethod`, decorators customizados |
-| Geradores e Iteradores | `yield`, `next()`, protocolos de iteração |
-| Programação Funcional | `map()`, `filter()`, `reduce()`, imutabilidade |
-| Concorrência | `threading`, `asyncio`, operações assíncronas |
-
-**O que você vai conseguir fazer ao final:**
-- Criar sistemas orientados a objetos
-- Escrever código Pythônico e eficiente
-- Desenvolver aplicações com alto desempenho
-
----
-
-## 🚀 Como Usar
-
-### 1. Clone o repositório
-```bash
-git clone https://github.com/felipelima2005/estudo_python.git
-cd estudos_python
-```
-
-### 2. Escolha seu nível
-Navegue até a pasta correspondente ao seu nível atual e siga os exercícios em ordem numérica.
-
-### 3. Execute os exemplos
-```bash
-python iniciante/01_variaveis_e_tipos/exemplo.py
-```
-
-### 4. Resolva os exercícios
-Cada pasta contém:
-- `exemplo.py` — código demonstrativo comentado
-- `exercicio.py` — arquivo para você praticar
-- `solucao.py` — solução de referência (tente não espiar antes!)
-
----
-
-## 🛠️ Requisitos
-
-- Python 3.8 ou superior
-- Nenhuma biblioteca externa necessária para os níveis Iniciante e Intermediário
-- Para o nível Avançado, instale as dependências com:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 📈 Sugestão de Trilha de Estudo
-
-```
-Semanas 1–3     →   🟢 Iniciante
-Semanas 4–7     →   🟡 Intermediário
-Semanas 8–12    →   🔴 Avançado
-Semanas 13+     →   🚀 Projetos práticos
-```
-
----
-
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas! Se quiser adicionar exercícios, corrigir exemplos ou melhorar explicações:
-
-1. Faça um fork do repositório
-2. Crie uma branch: `git checkout -b minha-contribuicao`
-3. Commit suas alterações: `git commit -m "feat: adiciona exercício de recursão"`
-4. Abra um Pull Request
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+1. Leia o enunciado com atenção
+2. Tente resolver **sem ver exemplos** primeiro
+3. Teste com diferentes entradas (incluindo casos inválidos)
+4. Refatore o código para deixá-lo mais limpo após funcionar
 
 ---
 
 <div align="center">
-  Feito com 🐍 para quem quer aprender Python de verdade.
+  Bons estudos! 🐍✨
 </div>
