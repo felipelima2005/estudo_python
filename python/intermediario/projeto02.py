@@ -23,6 +23,6 @@ aprovados = []
 
 for nome, nota in lista.items():
     if nota >= 7:
-       aprovados.append(nome)
+     aprovados.append(nome)
 
 print(f'Aprovados: {','.join(aprovados)}')
